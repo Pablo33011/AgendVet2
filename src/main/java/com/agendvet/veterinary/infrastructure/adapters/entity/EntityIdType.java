@@ -1,9 +1,8 @@
-package com.agendvet.veterinaria.infrastructure.adapters.entity;
+package com.agendvet.veterinary.infrastructure.adapters.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 import javax.persistence.*;
 
@@ -13,14 +12,14 @@ import javax.persistence.*;
 @Entity
 @Table(name = "tipo_identificacion")
 
-public class EntityTipoIdentificacion {
+public class EntityIdType {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int codigo;
     @Column(length = 20, nullable = false )
     private String tipoIdentificacion;
 
-    public EntityTipoIdentificacion(String tipoIdentificacion) {
+    public EntityIdType(String tipoIdentificacion) {
         this.tipoIdentificacion = tipoIdentificacion;
     }
 

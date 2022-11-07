@@ -1,18 +1,24 @@
-package com.agendvet.veterinaria.domain.dtoresponse;
+package com.agendvet.veterinary.app.dto;
 
-import com.agendvet.veterinaria.app.dto.DTOTipoIdentificacion;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponsePersona {
+
+public class DTOPerson {
     private String nombres;
     private String apellidos;
     private int numeroIdentificacion;
-    private DTOTipoIdentificacion tipoIdentificacion;
+    private DTOIdType tipoIdentificacion;
     private String telefono;
 
+
+    public static DTOPerson dummy(){
+        return new DTOPerson();
+    }
 }

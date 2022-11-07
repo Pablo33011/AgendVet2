@@ -1,6 +1,5 @@
-package com.agendvet.veterinaria.infrastructure.adapters.entity;
+package com.agendvet.veterinary.infrastructure.adapters.entity;
 
-import lombok.Generated;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,7 +11,7 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "persona")
-public class EntityPersona {
+public class EntityPerson {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -24,12 +23,12 @@ public class EntityPersona {
     @Column(length = 20, nullable = false )
     private int numeroIdentificacion;
     @Column(length = 20, nullable = false )
-    private EntityTipoIdentificacion tipoIdentificacion;
+    private EntityIdType tipoIdentificacion;
     @Column(length = 20, nullable = false )
     private String telefono;
 
 
-    public EntityPersona(String nombres, String apellidos, int numeroIdentificacion, EntityTipoIdentificacion tipoIdentificacion, String telefono) {
+    public EntityPerson(String nombres, String apellidos, int numeroIdentificacion, EntityIdType tipoIdentificacion, String telefono) {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.numeroIdentificacion = numeroIdentificacion;
@@ -69,11 +68,11 @@ public class EntityPersona {
         this.numeroIdentificacion = numeroIdentificacion;
     }
 
-    public EntityTipoIdentificacion getTipoIdentificacion() {
+    public EntityIdType getTipoIdentificacion() {
         return tipoIdentificacion;
     }
 
-    public void setTipoIdentificacion(EntityTipoIdentificacion tipoIdentificacion) {
+    public void setTipoIdentificacion(EntityIdType tipoIdentificacion) {
         this.tipoIdentificacion = tipoIdentificacion;
     }
 

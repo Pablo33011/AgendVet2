@@ -1,4 +1,4 @@
-package com.agendvet.veterinaria;
+package com.agendvet.veterinary;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,13 +1,13 @@
-package com.agendvet.veterinaria;
+package com.agendvet.veterinary;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VeterinariaApplication {
+public class VeterinaryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VeterinariaApplication.class, args);
+		SpringApplication.run(VeterinaryApplication.class, args);
 	}
 
 }

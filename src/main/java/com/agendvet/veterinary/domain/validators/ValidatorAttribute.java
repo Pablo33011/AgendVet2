@@ -1,8 +1,8 @@
-package com.agendvet.veterinaria.domain.validators;
+package com.agendvet.veterinary.domain.validators;
 
-public class ValidadorAtributos {
+public class ValidatorAttribute {
 
-    private ValidadorAtributos(){}
+    private ValidatorAttribute(){}
 
     public static void validarObligatorioCadena(String valor, String mensaje) {
         if (valor == null || valor.isEmpty()) {

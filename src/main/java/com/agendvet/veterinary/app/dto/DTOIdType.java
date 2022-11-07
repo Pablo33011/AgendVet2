@@ -1,4 +1,4 @@
-package com.agendvet.veterinaria.app.dto;
+package com.agendvet.veterinary.app.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class DTOTipoIdentificacion {
+public class DTOIdType {
     private String tipoIdentificacion;
 }
